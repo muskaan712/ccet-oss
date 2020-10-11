@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int n,k,i,j,t,y,h;
+	printf("Enter the number of lines");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{k=64;
+	for(j=n;j>=i;j--)
+	{
+		k=k+1;
+		printf("%c",k);
+	}
+	for(t=2*(i-1)-1;t>=1;t--)
+	printf(" ");
+	if(i==1)
+	{
+		for(y=k;y>=66;y--)
+		{
+			k=k-1;
+			printf("%c",k);
+		}
+	}
+	else
+	{
+		for(h=k+1;h>=66;h--)
+		{
+			k=h-1;
+			printf("%c",k);
+		}
+	}
+	printf("\n");
+    }
+}
